@@ -1,0 +1,236 @@
+function question(prompt, options, answer, explanation) {
+  return { prompt, options, answer, explanation };
+}
+
+export const grammarLessons = [
+  {
+    id: 'present-simple',
+    title: 'Present Simple',
+    level: 'Beginner',
+    description: 'Describe routines, facts, and timetables.',
+    explanation: [
+      'Use the present simple for routines, general facts, and fixed schedules. Use the base verb with I, you, we, and they. Add -s or -es with he, she, and it. A consonant followed by -y usually changes to -ies, as in studies.',
+      'Use do or does to make most questions and negatives. The main verb returns to its base form after does. The verb be follows its own pattern: am, is, and are.',
+    ],
+    examples: [
+      'Mira studies at the library on Tuesdays.',
+      'The last bus leaves at nine.',
+      'Does your brother play chess? No, he doesn’t play.',
+    ],
+    questions: [
+      question('Our science teacher ___ the plants every Friday.', ['water', 'waters', 'watering', 'is water'], 1, '“Our science teacher” is singular, so use the third-person form “waters.”'),
+      question('___ your neighbors work from home?', ['Do', 'Does', 'Is', 'Are'], 0, 'Use “do” with the plural subject “your neighbors” before the base verb “work.”'),
+      question('Leo ___ the bus on Saturdays. He walks.', ['doesn’t takes', 'don’t take', 'doesn’t take', 'not take'], 2, 'After “doesn’t,” use the base form “take.”'),
+      question('This map ___ the old bridge, but it shows the new one.', ['don’t show', 'isn’t show', 'doesn’t shows', 'doesn’t show'], 3, 'The singular subject “this map” takes “doesn’t” plus the base verb “show.”'),
+      question('According to the museum timetable, the first tour ___ at ten each morning.', ['begin', 'begins', 'is begin', 'beginning'], 1, 'A timetable can use the present simple. Add -s to “begin” because “the first tour” is singular.'),
+      question('Aida ___ a small notebook to every rehearsal.', ['carry', 'carrys', 'carries', 'is carry'], 2, 'In the third-person singular, change the consonant-plus-y ending of “carry” to -ies.'),
+    ],
+  },
+  {
+    id: 'present-continuous',
+    title: 'Present Continuous',
+    level: 'Beginner',
+    description: 'Talk about ongoing actions and temporary situations.',
+    explanation: [
+      'Form the present continuous with am, is, or are plus the -ing form of the verb. It often describes an action happening now or a temporary situation around the present.',
+      'Put am, is, or are before the subject in questions. Verbs describing states, such as know and believe, usually use the simple form even when the state is true right now.',
+    ],
+    examples: [
+      'I’m looking for my notebook.',
+      'We’re staying with my aunt this week.',
+      'Are the students working in pairs?',
+    ],
+    questions: [
+      question('Listen! Someone ___ the piano upstairs.', ['plays', 'playing', 'is playing', 'are playing'], 2, '“Listen!” points to an action happening now. Use “is playing” with “someone.”'),
+      question('This week we ___ in the main hall while our classroom is painted.', ['are meeting', 'meets', 'is meeting', 'be meeting'], 0, 'The current arrangement is temporary, so “are meeting” fits the context and the plural subject.'),
+      question('Where ___ right now?', ['you are going', 'do you going', 'is you going', 'are you going'], 3, 'Place “are” before “you” in a present continuous question.'),
+      question('I ___ the answer to that question.', ['am knowing', 'know', 'is knowing', 'knowing'], 1, '“Know” usually describes a state and takes the present simple.'),
+      question('Please wait a moment. I ___ the copies right now.', ['am making', 'make', 'making', 'are making'], 0, 'Use “am” with “I” for an action in progress. Drop the final e in “make” before adding -ing.'),
+      question('The players ___ outside at the moment because it is raining.', ['not training', 'isn’t training', 'don’t training', 'aren’t training'], 3, 'Form a negative present continuous with are not (aren’t) plus the -ing form. “The players” is plural.'),
+    ],
+  },
+  {
+    id: 'past-simple',
+    title: 'Past Simple',
+    level: 'Beginner',
+    description: 'Talk about completed actions in the past.',
+    explanation: [
+      'Use the past simple for events or states in a finished past time. Regular verbs typically take -ed. Common irregular verbs use forms such as went, saw, and wrote.',
+      'Use did or didn’t with the base verb in most questions and negatives. The past forms of be are was and were. They make their own questions and negatives.',
+    ],
+    examples: [
+      'We walked to the station yesterday.',
+      'The visitors went home before six.',
+      'Did you see the new sign? I didn’t see it.',
+    ],
+    questions: [
+      question('Yesterday I ___ my keys under the sofa.', ['find', 'finded', 'finding', 'found'], 3, '“Find” has the irregular past form “found.”'),
+      question('Did the team ___ the match last night?', ['win', 'won', 'winning', 'wins'], 0, 'Use the base form “win” after “did.”'),
+      question('The classroom ___ empty at noon yesterday.', ['were', 'was', 'been', 'be'], 1, 'Use “was” with a singular subject such as “the classroom.”'),
+      question('She ___ the invitation because she was busy.', ['didn’t accepted', 'doesn’t accept', 'didn’t accept', 'not accepted'], 2, '“Didn’t” marks the past. The main verb is the base form “accept.”'),
+      question('We ___ the club’s new poster last night.', ['finished', 'finish', 'finishes', 'have finish'], 0, '“Last night” is a finished past time. Add -ed to the regular verb “finish.”'),
+      question('___ the lights on when you left the library?', ['Was', 'Did were', 'Were', 'Been'], 2, 'Use “were” with the plural subject “the lights.” To form the question, put “were” before the subject.'),
+    ],
+  },
+  {
+    id: 'present-perfect',
+    title: 'Present Perfect',
+    level: 'Intermediate',
+    description: 'Connect past actions and experiences to the present.',
+    explanation: [
+      'Form the present perfect with have or has and a past participle. Use it to describe experience up to now, a present result, or a situation that started in the past and continues now.',
+      'Use since for a starting point and for for a duration. When you name a finished past time such as last Thursday, the past simple is usually the right choice.',
+    ],
+    examples: [
+      'I have lost my ticket, so I can’t enter.',
+      'We’ve studied together since September.',
+      'Have you ever visited a science museum?',
+    ],
+    questions: [
+      question('Nadia has lived near the river ___ 2021.', ['for', 'since', 'during', 'ago'], 1, '“2021” names the starting point, so use “since.”'),
+      question('We ___ the exhibition last Thursday.', ['have visited', 'have visiting', 'has visited', 'visited'], 3, '“Last Thursday” names a finished past time. Use the past simple “visited.”'),
+      question('I ___ my password, so I can’t sign in.', ['have forgotten', 'has forgotten', 'have forgot', 'am forgotten'], 0, 'Use “have” with “I,” followed by the participle “forgotten.” The result continues now.'),
+      question('___ you ever ___ a bike to school?', ['Has / rode', 'Have / rode', 'Have / ridden', 'Did / ridden'], 2, 'For experience up to now, use “have” and the past participle “ridden.”'),
+      question('Our group has worked on this model ___ three weeks, and we still need one more piece.', ['during', 'since', 'ago', 'for'], 3, '“Three weeks” is a duration. Use “for” with a duration and “since” with a starting point.'),
+      question('The final group ___ yet, so the teacher is keeping the door open.', ['haven’t arrive', 'hasn’t arrived', 'didn’t arrived', 'isn’t arrive'], 1, 'For an expected event that has not happened up to now, use “hasn’t arrived.” The singular subject “the final group” takes “has.”'),
+    ],
+  },
+  {
+    id: 'future-forms',
+    title: 'Future Forms',
+    level: 'Intermediate',
+    description: 'Choose future forms for decisions, intentions, and arrangements.',
+    explanation: [
+      'Use will for a decision made as you speak, an offer, or a prediction. Use be going to for an existing intention or a prediction based on present evidence.',
+      'The present continuous often describes a confirmed arrangement with a time or place. The present simple can express a future event fixed by a public schedule.',
+    ],
+    examples: [
+      'The doorbell is ringing. I’ll get the door.',
+      'Look at those clouds. It’s going to rain.',
+      'We’re meeting our tutor at four. The train leaves at six.',
+    ],
+    questions: [
+      question('Your friend drops her books. Which reply makes an immediate offer?', ['I lifted those for you.', 'I lift those for you.', 'I’ve lifted those for you.', 'I’ll help you pick those up.'], 3, '“I’ll help” is a natural offer made in response to the current situation.'),
+      question('Look at that loose stack of boxes. It ___ fall.', ['has fallen', 'is going to', 'will to', 'is going'], 1, '“Is going to” fits a prediction supported by evidence you can see.'),
+      question('Choose the present continuous for a confirmed arrangement.', ['I’m meeting the counselor at three.', 'I’ll meet the counselor someday.', 'I have met the counselor.', 'I meet the counselor every month.'], 0, '“I’m meeting” plus a precise time expresses an arranged future meeting.'),
+      question('According to the printed timetable, the lecture ___ at ten tomorrow.', ['will starting', 'is start', 'starts', 'has start'], 2, 'The present simple “starts” is suitable for fixed timetable events.'),
+      question('Which sentence uses “going to” to show a plan you made earlier?', ['I went to the archive yesterday.', 'I go through the archive every Friday.', 'I’m going to research the old railway this weekend.', 'I’ve researched the archive already.'], 2, 'Use am going to plus the base verb “research” for an intention you already have.'),
+      question('Mina thinks the new community garden ___ more visitors next summer.', ['attracted', 'has attracting', 'will to attract', 'will attract'], 3, 'Use will plus the base verb “attract” to express a prediction about the future.'),
+    ],
+  },
+  {
+    id: 'conditionals',
+    title: 'Conditionals',
+    level: 'Advanced',
+    description: 'Distinguish likely events, hypothetical situations, and past alternatives.',
+    explanation: [
+      'Use if + present simple with will + base verb for a likely future condition. Use if + past simple with would + base verb for an imagined present or future situation.',
+      'Use if + past perfect with would have + past participle for an unreal past condition and its imagined past result. A mixed conditional can connect an unreal past condition to a present result.',
+    ],
+    examples: [
+      'If the rain stops, we’ll play outside.',
+      'If I had more time, I would join the photography club.',
+      'If we had brought the map, we would know where we are now.',
+    ],
+    questions: [
+      question('If the teacher returns the essays tomorrow, we ___ them at lunch.', ['would discussed', 'would have discussed', 'will discuss', 'had discussed'], 2, 'A likely future situation can use if + present simple and will + base verb.'),
+      question('If I ___ fluent in both languages, I would volunteer as a guide.', ['have been', 'will be', 'was being', 'were'], 3, '“Were” is the usual formal choice after “if” for an imagined present state.'),
+      question('If we had left earlier, we ___ the train.', ['would have caught', 'will have caught', 'would catch', 'had catch'], 0, 'An unreal past condition with “had left” takes “would have caught” for the imagined past result.'),
+      question('If I had charged my phone before leaving, I ___ a working map now.', ['will have', 'would have', 'would had', 'had have'], 1, 'The past condition “had charged” connects to a present consequence expressed with “would have.” Here “have” means possess.'),
+      question('If you ___ a spare copy at home, you could lend it to Sam now.', ['had', 'will have', 'have had', 'would have'], 0, 'Use the past simple “had” after “if” to imagine a different present situation. “Could lend” gives the imagined result.'),
+      question('Which sentence imagines a different result for a race that ended yesterday?', ['If she trains this week, she will reach the finish.', 'If she had started more slowly, she would have had more energy for the final lap.', 'If she runs every day, she gets stronger.', 'If she had better shoes now, she would run more often.'], 1, 'The past perfect “had started” and “would have had” describe an unreal past condition and its imagined past result.'),
+    ],
+  },
+  {
+    id: 'passive-voice',
+    title: 'Passive Voice',
+    level: 'Advanced',
+    description: 'Shift the focus to what an action affects.',
+    explanation: [
+      'The passive uses a form of be plus a past participle. The subject receives the action. Use a by phrase if the person or thing performing the action matters.',
+      'Keep the original tense when changing an active sentence to the passive. Present perfect passive uses has or have been. A modal passive uses the modal plus be and the participle.',
+    ],
+    examples: [
+      'The mural was painted by local students.',
+      'The schedules have been updated.',
+      'Applications must be submitted by Friday.',
+    ],
+    questions: [
+      question('Which passive sentence means the same as “A technician repaired the projector yesterday”?', ['The projector was repaired yesterday.', 'The projector is repaired yesterday.', 'The projector was repair yesterday.', 'The projector has repaired yesterday.'], 0, 'The passive for a finished past action uses “was” and the participle “repaired.”'),
+      question('The final results ___ since the first announcement.', ['have update', 'has been updated', 'have been updated', 'are updating'], 2, 'The plural subject needs “have,” followed by “been updated” to form the present perfect passive.'),
+      question('Students must hand in the forms by noon. Which option keeps the meaning in the passive?', ['The forms must hand in by noon.', 'The forms must be handed in by noon.', 'The forms must been handed in by noon.', 'The forms must handing in by noon.'], 1, 'After a modal such as “must,” use “be” followed by the past participle.'),
+      question('The notices ___ while the meeting was in progress.', ['were print', 'are being printed', 'had printing', 'were being printed'], 3, 'The past continuous passive uses “were being” plus the past participle “printed.”'),
+      question('Which passive sentence keeps the meaning of “The library lends equipment to students” without naming the library?', ['Equipment lends to students.', 'Equipment was lent to students.', 'Equipment is lent to students.', 'Students are equipment lent.'], 2, 'Use “is lent” for the present simple passive with the uncountable subject “equipment.” The agent can be left out.'),
+      question('Which passive sentence keeps the meaning of “A volunteer has taken the photos”?', ['The photos have been taken.', 'The photos has been taken.', 'The photos are taken.', 'The photos have taken.'], 0, '“Have been taken” keeps the present perfect tense. The plural subject “photos” takes “have.”'),
+    ],
+  },
+  {
+    id: 'modal-verbs',
+    title: 'Modal Verbs',
+    level: 'Intermediate',
+    description: 'Express possibility, advice, permission, and obligation.',
+    explanation: [
+      'Place a base verb after common modal verbs. Can often expresses ability or permission, might expresses possibility, and should gives advice. Must expresses a strong obligation or a conclusion you draw from evidence.',
+      'Mustn’t prohibits an action. Don’t have to means the action is optional. The two forms therefore communicate different rules.',
+    ],
+    examples: [
+      'You can borrow my calculator.',
+      'You should check your sources before submitting the essay.',
+      'Visitors mustn’t touch the displays.',
+    ],
+    questions: [
+      question('Which option gives advice for sleeping better?', ['You might sleeping earlier.', 'You should turn off your phone before bed.', 'You can turns off your phone.', 'You must to sleep at once.'], 1, '“Should” plus the base form “turn” is a natural way to give advice.'),
+      question('Helmets are required, but bringing gloves is optional. You ___ bring gloves.', ['mustn’t', 'must', 'have to', 'don’t have to'], 3, '“Don’t have to” means there is no obligation. “Mustn’t” would prohibit gloves.'),
+      question('The floor may be slippery. Rewrite using a modal of possibility.', ['The floor might be slippery.', 'The floor might is slippery.', 'The floor can’t to be slippery.', 'The floor should being slippery.'], 0, '“Might be” correctly expresses possibility using the base verb “be.”'),
+      question('Her bike is outside and the lights are on. She ___ be home.', ['will to', 'must to', 'must', 'is must'], 2, '“Must” plus “be” can express a strong conclusion based on the evidence.'),
+      question('A classmate asks if they may borrow your ruler. Which reply gives permission?', ['You mustn’t use it.', 'You can use it until the end of class.', 'You should to use it.', 'You can’t use it.'], 1, 'Can plus a base verb can give permission. “You can use it” tells your classmate they are allowed to borrow the ruler.'),
+      question('The sign says “Food is prohibited in the lab.” What does the rule mean?', ['You don’t have to eat in the lab.', 'You might eat in the lab.', 'You can eat in the lab.', 'You mustn’t eat in the lab.'], 3, '“Mustn’t” means an action is prohibited. “Don’t have to” would mean the action is optional.'),
+    ],
+  },
+  {
+    id: 'articles',
+    title: 'Articles',
+    level: 'Beginner',
+    description: 'Use a, an, and the to show what your listener can identify.',
+    explanation: [
+      'Use a or an before a singular countable noun when introducing one example. Choose a before a consonant sound and an before a vowel sound. The sound matters more than the first written letter.',
+      'Use the when the listener can identify the thing you mean. You can usually leave the article out when you refer generally to plural countable nouns or uncountable substances.',
+    ],
+    examples: [
+      'I found a notebook. The notebook was under a chair.',
+      'She waited for an hour at a university library.',
+      'People need clean water.',
+    ],
+    questions: [
+      question('We waited for ___ hour before the next bus arrived.', ['a', 'the one', 'an', 'no article'], 2, 'The h in “hour” is silent, so the word starts with a vowel sound and takes “an.”'),
+      question('My sister studies at ___ university near the river.', ['a', 'an', 'no article', 'any a'], 0, '“University” starts with the consonant sound /j/, so use “a.”'),
+      question('I bought a lamp yesterday. ___ lamp is already on my desk.', ['A', 'An', 'Any a', 'The'], 3, 'The listener already knows which lamp from the previous sentence, so use “the.”'),
+      question('Which sentence talks about books in general?', ['The books is expensive.', 'Books can change how we think.', 'An books can change minds.', 'A books can change minds.'], 1, 'A plural countable noun can stand without an article when you are talking about the category in general.'),
+      question('Which sentence talks about rice in general?', ['A rice is grown in many countries.', 'An rice is grown in many countries.', 'Rice is grown in many countries.', 'Some the rice is grown in many countries.'], 2, '“Rice” is uncountable here. When you refer to rice in general, you can leave the article out.'),
+      question('The doctor ordered ___ MRI scan.', ['an', 'a', 'two', 'no article'], 0, 'The letter M is pronounced “em,” which starts with a vowel sound, so use “an.”'),
+    ],
+  },
+  {
+    id: 'prepositions',
+    title: 'Prepositions',
+    level: 'Beginner',
+    description: 'Locate actions in time and objects in space.',
+    explanation: [
+      'Use at for a clock time, on for a specified day or date, and in for a month, year, or longer period. Some expressions, such as at night, follow established patterns.',
+      'For places, at points to a location, on describes contact with a surface, and in describes being inside an area. Use into to describe movement from outside to inside.',
+    ],
+    examples: [
+      'The class starts at ten on Monday.',
+      'They moved here in October.',
+      'The keys are on the counter. We walked into the office.',
+    ],
+    questions: [
+      question('Our field trip is ___ Friday morning.', ['at', 'into', 'in', 'on'], 3, '“Friday morning” names a particular day, so use “on.”'),
+      question('The lights automatically turn on ___ six o’clock.', ['on', 'at', 'in', 'into'], 1, 'Use “at” before a clock time.'),
+      question('Please leave your notebook ___ the desk surface.', ['on', 'into', 'to', 'across into'], 0, 'Use “on” for contact with a surface.'),
+      question('From the hallway, we walked ___ the classroom.', ['on', 'at', 'into', 'among'], 2, '“Into” describes movement from outside to inside.'),
+      question('The new classes begin ___ September.', ['on', 'at', 'into', 'in'], 3, 'Use “in” before the name of a month.'),
+      question('The headphones are protected by the closed case. They are ___ it.', ['on', 'in', 'into', 'across'], 1, 'Use “in” for a position inside a container. “Into” would describe movement from outside to inside.'),
+    ],
+  },
+];
